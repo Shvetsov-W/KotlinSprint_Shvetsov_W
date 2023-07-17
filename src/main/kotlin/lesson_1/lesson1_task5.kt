@@ -1,8 +1,5 @@
 package lesson_1
 
-import java.sql.Time
-import java.time.LocalDateTime
-
 fun main() {
     val numberOfSeconds: Int = 6480
     val (minute: Int, remainderSecond: Int) = secondToMinute(6480)
