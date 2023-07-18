@@ -1,21 +1,16 @@
 package lesson_1
 
 fun main() {
-    val year: Int = 1961
-    var hour: Int = 9
-    var minute: Int = 7
+    val year: String = "1961"
+    var hour: String = "09"
+    var minute: String = "07"
 
     println("""Год: $year
-        |Час: ${hour.printLikeDataTime()}
-        |Минута: ${minute.printLikeDataTime()}""".trimMargin())
+        |Час: $hour
+        |Минута: $minute""".trimMargin())
 
-    hour = 10
-    minute = 55
+    hour = "10"
+    minute = "55"
 
-    print("Время посадки: ${hour.printLikeDataTime()}:${minute.printLikeDataTime()}")
-}
-
-fun Int.printLikeDataTime(arg: Int = this): String {
-    if (arg <= 9) return "0$arg"
-    else return arg.toString()
+    print("Время посадки: $hour:$minute")
 }
