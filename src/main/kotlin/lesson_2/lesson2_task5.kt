@@ -14,3 +14,5 @@ fun main() {
 
 fun calculateInterest(initialSum: Int, percent: Double, years: Int): Double =
     initialSum * (1 + percent / 100).pow(years)
+
+
